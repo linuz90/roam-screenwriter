@@ -18,6 +18,8 @@ Want to contribute? [Edit the theme](#editing-this-theme).
 
 3. Nest this code inside it: \```css @import url("https://linuz90.github.io/roam-screenwriter/main.css");```
 
+(this will load the [compiled css](https://linuz90.github.io/roam-screenwriter/main.css) in Roam)
+
 It should look like this:
 
 ![](/assets/how-to.png)
