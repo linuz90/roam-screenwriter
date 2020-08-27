@@ -4,6 +4,8 @@ What if you could write screenplays with [Roam Research](https://roamresearch.co
 
 Writing screenplays in Roam with this theme empowers storytelling with Roam strengths: bi-directional links, speed, dedicates pages to characters, and more.
 
+I recommend having the font [Courier Prime](https://quoteunquoteapps.com/courierprime/) installed to use this theme.
+
 [See a preview below](#preview).
 
 Got feedback? **[Say hi on Twitter](https://twitter.com/linuz90).**
