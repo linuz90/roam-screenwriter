@@ -1,0 +1,167 @@
+/* ---------------- Import Better Roam Research as base style --------------- */
+
+@import url('https://linuz90.github.io/better-roam-research/main.css');
+
+/* --------------------------------- Mixins --------------------------------- */
+
+@mixin tooltipHue($hue) {
+  color: hsl($hue, 50%, 45%);
+  background: hsl($hue, 50%, 94%);
+  border-top: 1.5px solid hsl($hue, 50%, 87%);
+  @media (prefers-color-scheme: dark) {
+    color: hsl($hue, 50%, 55%);
+    background: hsl($hue, 50%, 8%);
+    border-top: 1.5px solid hsl($hue, 50%, 15%);
+  }
+}
+
+@mixin tooltip($text, $hue) {
+  > .controls + div:not(.rm-block-text),
+  > .controls + h1 > div:not(.rm-block-text) {
+    position: relative;
+    &:after {
+      content: $text;
+      position: fixed;
+      bottom: 0px;
+      left: 0px;
+      right: 0px;
+      padding: 5px 0 7px;
+      font-weight: 600;
+      text-align: center;
+      font-size: 16px !important;
+      @include tooltipHue($hue);
+    }
+  }
+}
+
+@mixin styleBlock($text, $hue, $margin) {
+  > div {
+    max-width: 660px !important;
+  }
+  > .rm-block-text > span,
+  > h1,
+  > div > textarea {
+    @content;
+    &:hover {
+      background: var(--main-background-color);
+      border-radius: 3px !important;
+    }
+    &:empty:after {
+      content: '[#{$text}]';
+      color: var(--font-color-placeholder);
+    }
+  }
+  margin-bottom: $margin;
+  @include tooltip($text, $hue);
+}
+
+/* ---------------------------------- Style --------------------------------- */
+
+.roam-article {
+  span,
+  textarea,
+  .rm-title-display,
+  .rm-block-text {
+    font-family: 'Courier Prime', 'Courier New', Courier, monospace !important;
+    line-height: 20px !important;
+    font-size: 17px !important;
+  }
+  textarea {
+    line-height: 23px !important;
+  }
+  .rm-title-display,
+  .rm-title-textarea {
+    span {
+      font-size: 22px !important;
+    }
+    font-size: 22px !important;
+    text-align: center !important;
+  }
+  .roam-block {
+    min-height: 17px !important;
+    margin-top: 0px !important;
+  }
+  .rm-level1 {
+    div,
+    textarea {
+      font-size: 17px !important;
+    }
+  }
+  .rm-block-text {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  .rm-block-input {
+    margin-top: 0px !important;
+  }
+  .block-bullet-view {
+    margin-bottom: 0px !important;
+    .block-border-left {
+      border-left: none !important;
+      padding-left: 1px !important;
+    }
+    > div > div > .controls {
+      opacity: 0;
+    }
+    &:hover {
+      > div > div > .controls {
+        opacity: 1;
+      }
+    }
+  }
+  .controls {
+    flex: 0 0 30px !important;
+    padding-left: 0px !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+  .block-bullet-view {
+    margin-left: 0px !important;
+  }
+
+  /* ---------------------------------- Scene --------------------------------- */
+
+  > div > div > div > div > div {
+    @include styleBlock('Scene', 0, 17px) {
+      font-weight: 600 !important;
+    }
+  }
+
+  /* ------------------------------- Description ------------------------------ */
+
+  .block-bullet-view > div {
+    margin-left: 0px !important;
+  }
+  > div > div > div > div > div > div > div {
+    @include styleBlock('Description', 30, 17px);
+  }
+
+  /* ------------------------------- Characters ------------------------------- */
+
+  > div > div > div > div > div > div > div > div > div {
+    @include styleBlock('Character', 220, 0) {
+      text-align: center !important;
+      display: block;
+    }
+  }
+
+  /* --------------------------------- Dialog --------------------------------- */
+
+  > div > div > div > div > div > div > div > div > div > div > div {
+    @include styleBlock('Dialog', 180, 0) {
+      margin: 0 auto !important;
+      width: 360px !important;
+      max-width: 100% !important;
+      display: block !important;
+    }
+  }
+
+  /* ------------------------------ Paranthetical ----------------------------- */
+
+  > div > div > div > div > div > div > div > div > div > div > div > div > div {
+    @include styleBlock('Parenthetical', 50, 0) {
+      display: block !important;
+      text-align: center;
+    }
+  }
+}
