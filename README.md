@@ -60,6 +60,8 @@ When Dark Mode is enabled on your computer:
 
 To create this theme I'm using the **SCSS** syntax. This file is compiled into a regular **CSS** file used for the theme.
 
+Please note that this theme imports my other theme [Better Roam Research](https://github.com/linuz90/better-roam-research) and uses it as a base. This is important also because I use a few variables here defined in the other theme.
+
 To edit the theme, install [Ruby Sass](https://github.com/sass/ruby-sass) (it's not maintained anymore, will use something else in the future).
 
 Then compile the SASS using this command:
