@@ -12,7 +12,7 @@ Got feedback? **[Say hi on Twitter](https://twitter.com/linuz90).**
 
 Want to contribute? [Edit the theme](#editing-this-theme).
 
-# How to use
+# Install
 
 1. Inside Roam Research, create a page named exactly `roam/css`
 
@@ -29,6 +29,22 @@ It should look like this:
 With this system the theme will stay up to date automatically ⚡️
 
 Check out a more extensive theming guide [here](https://nesslabs.com/roam-research-themes-custom-styling-css).
+
+# How To Use
+
+**The screenplay syntax in this theme is completely based on indentation.** To make it clear, when editing a block you’ll see an overlay in the bottom part of the screen that indicates the kind of block you’re editing.
+
+Just press `Tab` and `Shift + Tab` to cycle through these block types:
+
+* Scene (heading)
+* Description
+* Character (speaking)
+* Dialogue
+* Parenthetical
+
+The order you see here corresponds to the indentation of the block, so unfortunately there’s a downside: to insert a block you can’t have “gaps” in the indentation.
+
+Example: you can’t currently add a `Character` block directly under a `Scene` heading. You’ll need a `Description` block in between (which you can leave empty).
 
 # Preview
 
