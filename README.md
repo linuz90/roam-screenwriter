@@ -6,11 +6,11 @@ Writing screenplays in Roam with this theme empowers storytelling with Roam stre
 
 I recommend having the font [Courier Prime](https://quoteunquoteapps.com/courierprime/) installed to use this theme.
 
-[See a preview below](#preview).
+👀 **[See a preview](#preview)**
 
-Got feedback? **[Say hi on Twitter](https://twitter.com/linuz90).**
+💬 **[Give feedback or say hi](https://twitter.com/linuz90)**
 
-Want to contribute? [Edit the theme](#editing-this-theme).
+🔥 **[Edit the theme](#editing-this-theme)**
 
 # Install
 
