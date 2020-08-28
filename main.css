@@ -51,29 +51,29 @@
     padding-bottom: 0px !important; }
   .roam-article .block-bullet-view {
     margin-left: 0px !important; }
-  .roam-article > div > div > div > div > div {
+  .roam-article > div > div > div > div > div:first-child > div:not(.dnd-drop-area) {
+    max-width: 660px !important; }
+  .roam-article > div > div > div > div > div:first-child > .rm-block-text > span,
+  .roam-article > div > div > div > div > div:first-child > h1,
+  .roam-article > div > div > div > div > div:first-child > div > textarea {
+    font-weight: 600 !important; }
+    .roam-article > div > div > div > div > div:first-child > .rm-block-text > span:hover,
+    .roam-article > div > div > div > div > div:first-child > h1:hover,
+    .roam-article > div > div > div > div > div:first-child > div > textarea:hover {
+      background: var(--main-background-color);
+      border-radius: 3px !important; }
+    .roam-article > div > div > div > div > div:first-child > .rm-block-text > span:empty:after,
+    .roam-article > div > div > div > div > div:first-child > h1:empty:after,
+    .roam-article > div > div > div > div > div:first-child > div > textarea:empty:after {
+      content: "[Scene]";
+      color: var(--font-color-placeholder); }
+  .roam-article > div > div > div > div > div:first-child:not(.dnd-separator) {
     margin-bottom: 17px; }
-    .roam-article > div > div > div > div > div > div {
-      max-width: 660px !important; }
-    .roam-article > div > div > div > div > div > .rm-block-text > span,
-    .roam-article > div > div > div > div > div > h1,
-    .roam-article > div > div > div > div > div > div > textarea {
-      font-weight: 600 !important; }
-      .roam-article > div > div > div > div > div > .rm-block-text > span:hover,
-      .roam-article > div > div > div > div > div > h1:hover,
-      .roam-article > div > div > div > div > div > div > textarea:hover {
-        background: var(--main-background-color);
-        border-radius: 3px !important; }
-      .roam-article > div > div > div > div > div > .rm-block-text > span:empty:after,
-      .roam-article > div > div > div > div > div > h1:empty:after,
-      .roam-article > div > div > div > div > div > div > textarea:empty:after {
-        content: "[Scene]";
-        color: var(--font-color-placeholder); }
-    .roam-article > div > div > div > div > div > .controls + div:not(.rm-block-text),
-    .roam-article > div > div > div > div > div > .controls + h1 > div:not(.rm-block-text) {
+    .roam-article > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + div:not(.rm-block-text),
+    .roam-article > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + h1 > div:not(.rm-block-text) {
       position: relative; }
-      .roam-article > div > div > div > div > div > .controls + div:not(.rm-block-text):after,
-      .roam-article > div > div > div > div > div > .controls + h1 > div:not(.rm-block-text):after {
+      .roam-article > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + div:not(.rm-block-text):after,
+      .roam-article > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + h1 > div:not(.rm-block-text):after {
         content: "Scene";
         position: fixed;
         bottom: 0px;
@@ -87,32 +87,32 @@
         background: #f7e8e8;
         border-top: 1.5px solid #eecdcd; }
         @media (prefers-color-scheme: dark) {
-          .roam-article > div > div > div > div > div > .controls + div:not(.rm-block-text):after,
-          .roam-article > div > div > div > div > div > .controls + h1 > div:not(.rm-block-text):after {
+          .roam-article > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + div:not(.rm-block-text):after,
+          .roam-article > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + h1 > div:not(.rm-block-text):after {
             color: #c65353;
             background: #1f0a0a;
             border-top: 1.5px solid #391313; } }
   .roam-article .block-bullet-view > div {
     margin-left: 0px !important; }
-  .roam-article > div > div > div > div > div > div > div {
+  .roam-article > div > div > div > div > div > div > div:first-child > div:not(.dnd-drop-area) {
+    max-width: 660px !important; }
+  .roam-article > div > div > div > div > div > div > div:first-child > .rm-block-text > span:hover,
+  .roam-article > div > div > div > div > div > div > div:first-child > h1:hover,
+  .roam-article > div > div > div > div > div > div > div:first-child > div > textarea:hover {
+    background: var(--main-background-color);
+    border-radius: 3px !important; }
+  .roam-article > div > div > div > div > div > div > div:first-child > .rm-block-text > span:empty:after,
+  .roam-article > div > div > div > div > div > div > div:first-child > h1:empty:after,
+  .roam-article > div > div > div > div > div > div > div:first-child > div > textarea:empty:after {
+    content: "[Description]";
+    color: var(--font-color-placeholder); }
+  .roam-article > div > div > div > div > div > div > div:first-child:not(.dnd-separator) {
     margin-bottom: 17px; }
-    .roam-article > div > div > div > div > div > div > div > div {
-      max-width: 660px !important; }
-    .roam-article > div > div > div > div > div > div > div > .rm-block-text > span:hover,
-    .roam-article > div > div > div > div > div > div > div > h1:hover,
-    .roam-article > div > div > div > div > div > div > div > div > textarea:hover {
-      background: var(--main-background-color);
-      border-radius: 3px !important; }
-    .roam-article > div > div > div > div > div > div > div > .rm-block-text > span:empty:after,
-    .roam-article > div > div > div > div > div > div > div > h1:empty:after,
-    .roam-article > div > div > div > div > div > div > div > div > textarea:empty:after {
-      content: "[Description]";
-      color: var(--font-color-placeholder); }
-    .roam-article > div > div > div > div > div > div > div > .controls + div:not(.rm-block-text),
-    .roam-article > div > div > div > div > div > div > div > .controls + h1 > div:not(.rm-block-text) {
+    .roam-article > div > div > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + div:not(.rm-block-text),
+    .roam-article > div > div > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + h1 > div:not(.rm-block-text) {
       position: relative; }
-      .roam-article > div > div > div > div > div > div > div > .controls + div:not(.rm-block-text):after,
-      .roam-article > div > div > div > div > div > div > div > .controls + h1 > div:not(.rm-block-text):after {
+      .roam-article > div > div > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + div:not(.rm-block-text):after,
+      .roam-article > div > div > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + h1 > div:not(.rm-block-text):after {
         content: "Description";
         position: fixed;
         bottom: 0px;
@@ -126,35 +126,35 @@
         background: #f7f0e8;
         border-top: 1.5px solid #eedecd; }
         @media (prefers-color-scheme: dark) {
-          .roam-article > div > div > div > div > div > div > div > .controls + div:not(.rm-block-text):after,
-          .roam-article > div > div > div > div > div > div > div > .controls + h1 > div:not(.rm-block-text):after {
+          .roam-article > div > div > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + div:not(.rm-block-text):after,
+          .roam-article > div > div > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + h1 > div:not(.rm-block-text):after {
             color: #c68c53;
             background: #1f140a;
             border-top: 1.5px solid #392613; } }
-  .roam-article > div > div > div > div > div > div > div > div > div {
+  .roam-article > div > div > div > div > div > div > div > div > div:first-child > div:not(.dnd-drop-area) {
+    max-width: 660px !important; }
+  .roam-article > div > div > div > div > div > div > div > div > div:first-child > .rm-block-text > span,
+  .roam-article > div > div > div > div > div > div > div > div > div:first-child > h1,
+  .roam-article > div > div > div > div > div > div > div > div > div:first-child > div > textarea {
+    text-align: center !important;
+    display: block; }
+    .roam-article > div > div > div > div > div > div > div > div > div:first-child > .rm-block-text > span:hover,
+    .roam-article > div > div > div > div > div > div > div > div > div:first-child > h1:hover,
+    .roam-article > div > div > div > div > div > div > div > div > div:first-child > div > textarea:hover {
+      background: var(--main-background-color);
+      border-radius: 3px !important; }
+    .roam-article > div > div > div > div > div > div > div > div > div:first-child > .rm-block-text > span:empty:after,
+    .roam-article > div > div > div > div > div > div > div > div > div:first-child > h1:empty:after,
+    .roam-article > div > div > div > div > div > div > div > div > div:first-child > div > textarea:empty:after {
+      content: "[Character]";
+      color: var(--font-color-placeholder); }
+  .roam-article > div > div > div > div > div > div > div > div > div:first-child:not(.dnd-separator) {
     margin-bottom: 0; }
-    .roam-article > div > div > div > div > div > div > div > div > div > div {
-      max-width: 660px !important; }
-    .roam-article > div > div > div > div > div > div > div > div > div > .rm-block-text > span,
-    .roam-article > div > div > div > div > div > div > div > div > div > h1,
-    .roam-article > div > div > div > div > div > div > div > div > div > div > textarea {
-      text-align: center !important;
-      display: block; }
-      .roam-article > div > div > div > div > div > div > div > div > div > .rm-block-text > span:hover,
-      .roam-article > div > div > div > div > div > div > div > div > div > h1:hover,
-      .roam-article > div > div > div > div > div > div > div > div > div > div > textarea:hover {
-        background: var(--main-background-color);
-        border-radius: 3px !important; }
-      .roam-article > div > div > div > div > div > div > div > div > div > .rm-block-text > span:empty:after,
-      .roam-article > div > div > div > div > div > div > div > div > div > h1:empty:after,
-      .roam-article > div > div > div > div > div > div > div > div > div > div > textarea:empty:after {
-        content: "[Character]";
-        color: var(--font-color-placeholder); }
-    .roam-article > div > div > div > div > div > div > div > div > div > .controls + div:not(.rm-block-text),
-    .roam-article > div > div > div > div > div > div > div > div > div > .controls + h1 > div:not(.rm-block-text) {
+    .roam-article > div > div > div > div > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + div:not(.rm-block-text),
+    .roam-article > div > div > div > div > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + h1 > div:not(.rm-block-text) {
       position: relative; }
-      .roam-article > div > div > div > div > div > div > div > div > div > .controls + div:not(.rm-block-text):after,
-      .roam-article > div > div > div > div > div > div > div > div > div > .controls + h1 > div:not(.rm-block-text):after {
+      .roam-article > div > div > div > div > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + div:not(.rm-block-text):after,
+      .roam-article > div > div > div > div > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + h1 > div:not(.rm-block-text):after {
         content: "Character";
         position: fixed;
         bottom: 0px;
@@ -168,37 +168,37 @@
         background: #e8edf7;
         border-top: 1.5px solid #cdd8ee; }
         @media (prefers-color-scheme: dark) {
-          .roam-article > div > div > div > div > div > div > div > div > div > .controls + div:not(.rm-block-text):after,
-          .roam-article > div > div > div > div > div > div > div > div > div > .controls + h1 > div:not(.rm-block-text):after {
+          .roam-article > div > div > div > div > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + div:not(.rm-block-text):after,
+          .roam-article > div > div > div > div > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + h1 > div:not(.rm-block-text):after {
             color: #5379c6;
             background: #0a111f;
             border-top: 1.5px solid #132039; } }
-  .roam-article > div > div > div > div > div > div > div > div > div > div > div {
+  .roam-article > div > div > div > div > div > div > div > div > div > div > div:first-child > div:not(.dnd-drop-area) {
+    max-width: 660px !important; }
+  .roam-article > div > div > div > div > div > div > div > div > div > div > div:first-child > .rm-block-text > span,
+  .roam-article > div > div > div > div > div > div > div > div > div > div > div:first-child > h1,
+  .roam-article > div > div > div > div > div > div > div > div > div > div > div:first-child > div > textarea {
+    margin: 0 auto !important;
+    width: 360px !important;
+    max-width: 100% !important;
+    display: block !important; }
+    .roam-article > div > div > div > div > div > div > div > div > div > div > div:first-child > .rm-block-text > span:hover,
+    .roam-article > div > div > div > div > div > div > div > div > div > div > div:first-child > h1:hover,
+    .roam-article > div > div > div > div > div > div > div > div > div > div > div:first-child > div > textarea:hover {
+      background: var(--main-background-color);
+      border-radius: 3px !important; }
+    .roam-article > div > div > div > div > div > div > div > div > div > div > div:first-child > .rm-block-text > span:empty:after,
+    .roam-article > div > div > div > div > div > div > div > div > div > div > div:first-child > h1:empty:after,
+    .roam-article > div > div > div > div > div > div > div > div > div > div > div:first-child > div > textarea:empty:after {
+      content: "[Dialog]";
+      color: var(--font-color-placeholder); }
+  .roam-article > div > div > div > div > div > div > div > div > div > div > div:first-child:not(.dnd-separator) {
     margin-bottom: 0; }
-    .roam-article > div > div > div > div > div > div > div > div > div > div > div > div {
-      max-width: 660px !important; }
-    .roam-article > div > div > div > div > div > div > div > div > div > div > div > .rm-block-text > span,
-    .roam-article > div > div > div > div > div > div > div > div > div > div > div > h1,
-    .roam-article > div > div > div > div > div > div > div > div > div > div > div > div > textarea {
-      margin: 0 auto !important;
-      width: 360px !important;
-      max-width: 100% !important;
-      display: block !important; }
-      .roam-article > div > div > div > div > div > div > div > div > div > div > div > .rm-block-text > span:hover,
-      .roam-article > div > div > div > div > div > div > div > div > div > div > div > h1:hover,
-      .roam-article > div > div > div > div > div > div > div > div > div > div > div > div > textarea:hover {
-        background: var(--main-background-color);
-        border-radius: 3px !important; }
-      .roam-article > div > div > div > div > div > div > div > div > div > div > div > .rm-block-text > span:empty:after,
-      .roam-article > div > div > div > div > div > div > div > div > div > div > div > h1:empty:after,
-      .roam-article > div > div > div > div > div > div > div > div > div > div > div > div > textarea:empty:after {
-        content: "[Dialog]";
-        color: var(--font-color-placeholder); }
-    .roam-article > div > div > div > div > div > div > div > div > div > div > div > .controls + div:not(.rm-block-text),
-    .roam-article > div > div > div > div > div > div > div > div > div > div > div > .controls + h1 > div:not(.rm-block-text) {
+    .roam-article > div > div > div > div > div > div > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + div:not(.rm-block-text),
+    .roam-article > div > div > div > div > div > div > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + h1 > div:not(.rm-block-text) {
       position: relative; }
-      .roam-article > div > div > div > div > div > div > div > div > div > div > div > .controls + div:not(.rm-block-text):after,
-      .roam-article > div > div > div > div > div > div > div > div > div > div > div > .controls + h1 > div:not(.rm-block-text):after {
+      .roam-article > div > div > div > div > div > div > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + div:not(.rm-block-text):after,
+      .roam-article > div > div > div > div > div > div > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + h1 > div:not(.rm-block-text):after {
         content: "Dialog";
         position: fixed;
         bottom: 0px;
@@ -212,35 +212,35 @@
         background: #e8f7f7;
         border-top: 1.5px solid #cdeeee; }
         @media (prefers-color-scheme: dark) {
-          .roam-article > div > div > div > div > div > div > div > div > div > div > div > .controls + div:not(.rm-block-text):after,
-          .roam-article > div > div > div > div > div > div > div > div > div > div > div > .controls + h1 > div:not(.rm-block-text):after {
+          .roam-article > div > div > div > div > div > div > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + div:not(.rm-block-text):after,
+          .roam-article > div > div > div > div > div > div > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + h1 > div:not(.rm-block-text):after {
             color: #53c6c6;
             background: #0a1f1f;
             border-top: 1.5px solid #133939; } }
-  .roam-article > div > div > div > div > div > div > div > div > div > div > div > div > div {
+  .roam-article > div > div > div > div > div > div > div > div > div > div > div > div > div:first-child > div:not(.dnd-drop-area) {
+    max-width: 660px !important; }
+  .roam-article > div > div > div > div > div > div > div > div > div > div > div > div > div:first-child > .rm-block-text > span,
+  .roam-article > div > div > div > div > div > div > div > div > div > div > div > div > div:first-child > h1,
+  .roam-article > div > div > div > div > div > div > div > div > div > div > div > div > div:first-child > div > textarea {
+    display: block !important;
+    text-align: center; }
+    .roam-article > div > div > div > div > div > div > div > div > div > div > div > div > div:first-child > .rm-block-text > span:hover,
+    .roam-article > div > div > div > div > div > div > div > div > div > div > div > div > div:first-child > h1:hover,
+    .roam-article > div > div > div > div > div > div > div > div > div > div > div > div > div:first-child > div > textarea:hover {
+      background: var(--main-background-color);
+      border-radius: 3px !important; }
+    .roam-article > div > div > div > div > div > div > div > div > div > div > div > div > div:first-child > .rm-block-text > span:empty:after,
+    .roam-article > div > div > div > div > div > div > div > div > div > div > div > div > div:first-child > h1:empty:after,
+    .roam-article > div > div > div > div > div > div > div > div > div > div > div > div > div:first-child > div > textarea:empty:after {
+      content: "[Parenthetical]";
+      color: var(--font-color-placeholder); }
+  .roam-article > div > div > div > div > div > div > div > div > div > div > div > div > div:first-child:not(.dnd-separator) {
     margin-bottom: 0; }
-    .roam-article > div > div > div > div > div > div > div > div > div > div > div > div > div > div {
-      max-width: 660px !important; }
-    .roam-article > div > div > div > div > div > div > div > div > div > div > div > div > div > .rm-block-text > span,
-    .roam-article > div > div > div > div > div > div > div > div > div > div > div > div > div > h1,
-    .roam-article > div > div > div > div > div > div > div > div > div > div > div > div > div > div > textarea {
-      display: block !important;
-      text-align: center; }
-      .roam-article > div > div > div > div > div > div > div > div > div > div > div > div > div > .rm-block-text > span:hover,
-      .roam-article > div > div > div > div > div > div > div > div > div > div > div > div > div > h1:hover,
-      .roam-article > div > div > div > div > div > div > div > div > div > div > div > div > div > div > textarea:hover {
-        background: var(--main-background-color);
-        border-radius: 3px !important; }
-      .roam-article > div > div > div > div > div > div > div > div > div > div > div > div > div > .rm-block-text > span:empty:after,
-      .roam-article > div > div > div > div > div > div > div > div > div > div > div > div > div > h1:empty:after,
-      .roam-article > div > div > div > div > div > div > div > div > div > div > div > div > div > div > textarea:empty:after {
-        content: "[Parenthetical]";
-        color: var(--font-color-placeholder); }
-    .roam-article > div > div > div > div > div > div > div > div > div > div > div > div > div > .controls + div:not(.rm-block-text),
-    .roam-article > div > div > div > div > div > div > div > div > div > div > div > div > div > .controls + h1 > div:not(.rm-block-text) {
+    .roam-article > div > div > div > div > div > div > div > div > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + div:not(.rm-block-text),
+    .roam-article > div > div > div > div > div > div > div > div > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + h1 > div:not(.rm-block-text) {
       position: relative; }
-      .roam-article > div > div > div > div > div > div > div > div > div > div > div > div > div > .controls + div:not(.rm-block-text):after,
-      .roam-article > div > div > div > div > div > div > div > div > div > div > div > div > div > .controls + h1 > div:not(.rm-block-text):after {
+      .roam-article > div > div > div > div > div > div > div > div > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + div:not(.rm-block-text):after,
+      .roam-article > div > div > div > div > div > div > div > div > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + h1 > div:not(.rm-block-text):after {
         content: "Parenthetical";
         position: fixed;
         bottom: 0px;
@@ -254,8 +254,8 @@
         background: #f7f5e8;
         border-top: 1.5px solid #eee9cd; }
         @media (prefers-color-scheme: dark) {
-          .roam-article > div > div > div > div > div > div > div > div > div > div > div > div > div > .controls + div:not(.rm-block-text):after,
-          .roam-article > div > div > div > div > div > div > div > div > div > div > div > div > div > .controls + h1 > div:not(.rm-block-text):after {
+          .roam-article > div > div > div > div > div > div > div > div > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + div:not(.rm-block-text):after,
+          .roam-article > div > div > div > div > div > div > div > div > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + h1 > div:not(.rm-block-text):after {
             color: #c6b353;
             background: #1f1b0a;
             border-top: 1.5px solid #393313; } }
