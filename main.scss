@@ -4,6 +4,8 @@
 
 /* --------------------------------- Mixins --------------------------------- */
 
+$font-size: 17px;
+
 @mixin tooltipHue($hue) {
   color: hsl($hue, 50%, 45%);
   background: hsl($hue, 50%, 94%);
@@ -34,7 +36,7 @@
   }
 }
 
-@mixin styleBlock($text, $hue, $margin) {
+@mixin styleBlock($text, $hue, $bottom, $top) {
   > div:not(.dnd-drop-area) {
     max-width: 660px !important;
   }
@@ -50,9 +52,14 @@
       content: '[#{$text}]';
       color: var(--font-color-placeholder);
     }
+    &:empty {
+      content: '[#{$text}]';
+      color: var(--font-color-placeholder);
+    }
   }
   &:not(.dnd-separator) {
-    margin-bottom: $margin;
+    margin-bottom: $bottom;
+    margin-top: $top;
     @include tooltip($text, $hue);
   }
 }
@@ -66,7 +73,7 @@
   .rm-block-text {
     font-family: 'Courier Prime', 'Courier New', Courier, monospace !important;
     line-height: 20px !important;
-    font-size: 17px !important;
+    font-size: $font-size !important;
   }
   textarea {
     line-height: 23px !important;
@@ -80,13 +87,13 @@
     text-align: center !important;
   }
   .roam-block {
-    min-height: 17px !important;
+    min-height: $font-size !important;
     margin-top: 0px !important;
   }
   .rm-level1 {
     div,
     textarea {
-      font-size: 17px !important;
+      font-size: $font-size !important;
     }
   }
   .rm-block-text {
@@ -124,7 +131,7 @@
   /* ---------------------------------- Scene --------------------------------- */
 
   > div > div > div > div > div:first-child {
-    @include styleBlock('Scene', 0, 17px) {
+    @include styleBlock('Scene', 0, $font-size, 0) {
       font-weight: 600 !important;
     }
   }
@@ -135,13 +142,13 @@
     margin-left: 0px !important;
   }
   > div > div > div > div > div > div > div:first-child {
-    @include styleBlock('Description', 30, 17px);
+    @include styleBlock('Description', 30, $font-size, 0);
   }
 
   /* ------------------------------- Characters ------------------------------- */
 
   > div > div > div > div > div > div > div > div > div:first-child {
-    @include styleBlock('Character', 220, 0) {
+    @include styleBlock('Character', 220, 0, 0) {
       text-align: center !important;
       display: block;
     }
@@ -150,7 +157,7 @@
   /* --------------------------------- Dialog --------------------------------- */
 
   > div > div > div > div > div > div > div > div > div > div > div:first-child {
-    @include styleBlock('Dialog', 180, 0) {
+    @include styleBlock('Dialog', 180, $font-size, 0) {
       margin: 0 auto !important;
       width: 360px !important;
       max-width: 100% !important;
@@ -161,7 +168,7 @@
   /* ------------------------------ Paranthetical ----------------------------- */
 
   > div > div > div > div > div > div > div > div > div > div > div > div > div:first-child {
-    @include styleBlock('Parenthetical', 50, 0) {
+    @include styleBlock('Parenthetical', 50, $font-size, -#{$font-size}) {
       display: block !important;
       text-align: center;
     }
