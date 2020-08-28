@@ -28,7 +28,7 @@ Here it is with the theme applied:
 
 It even adds Dark Mode support:
 
-![](/assets/after.png)
+![](/assets/dark.png)
 
 # Install this theme
 
