@@ -18,7 +18,9 @@ I recommend having the font [Courier Prime](https://quoteunquoteapps.com/courier
 
 2. Create a `[[Roam Screenwriter]]` bullet point.
 
-3. Nest this code inside it: \```css @import url("https://linuz90.github.io/roam-screenwriter/main.css");```
+3. Create  **code block** inside it (you can write three backticks to create it: ```) and change it to **css**
+
+4. Paste this in the code block `@import url("https://linuz90.github.io/roam-screenwriter/main.css");`
 
 (this will load the [compiled css](https://linuz90.github.io/roam-screenwriter/main.css) in Roam)
 
