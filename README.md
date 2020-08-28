@@ -1,10 +1,10 @@
 # Roam Screenwriter
 
-What if you could write screenplays with [Roam Research](https://roamresearch.com)? That's the question that made me build this theme.
+[Roam Research](https://roamresearch.com) is a a modern note-taking application that lets you connect your thoughts and ideas easily. Instead of worrying about links and folders, you write words in [[square brakets]] to make them link to other pages.
 
-Writing screenplays in Roam with this theme empowers storytelling with Roam strengths: bi-directional links, speed, dedicates pages to characters, and more.
+Applying this approach to screenwriting and storytelling is very powerful. Imaging typing a character name in a script, and have it instantly link to its character page, and appear as a reference everywhere it's mentioned (daily notes, other scenes, other characters pages...).
 
-I recommend having the font [Courier Prime](https://quoteunquoteapps.com/courierprime/) installed to use this theme.
+I've created this Screenwriting theme to style text in Roam so that you can easily write a screenplay with it, and take advantage of all the power of Roam.
 
 👀 **[See a preview](#preview)**
 
@@ -21,6 +21,8 @@ I recommend having the font [Courier Prime](https://quoteunquoteapps.com/courier
 3. Create  **code block** inside it (you can write three backticks to create it: ```) and change it to **css**
 
 4. Paste this in the code block `@import url("https://linuz90.github.io/roam-screenwriter/main.css");`
+
+**Bonus:** I recommend having the font [Courier Prime](https://quoteunquoteapps.com/courierprime/) installed to use this theme.
 
 (this will load the [compiled css](https://linuz90.github.io/roam-screenwriter/main.css) in Roam)
 
