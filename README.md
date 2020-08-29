@@ -35,6 +35,8 @@ It even adds Dark Mode support:
 
 This looks cumbersome but it takes a minute.
 
+### Add the CSS
+
 * Inside Roam Research, create a page named exactly `roam/css`
 
 * Create a `[[Roam Screenwriter]]` bullet point.
@@ -45,15 +47,19 @@ This looks cumbersome but it takes a minute.
 
 ![](/assets/install-css.gif)
 
+### Add the JS
+
 * Now type this inside any page (I used a "Scripts" page): `{{[[roam/js]]}}`
 
 * Click on the red "I know what I'm doing" button and add a child code block inside, like on step 3 but set it to **javascript**
 
-* *Paste this code inside it: `import("https://linuz90.github.io/roam-screenwriter/script.js")`
+* Paste this code inside it: `import("https://linuz90.github.io/roam-screenwriter/script.js")`
 
 ![](/assets/install-js.gif)
 
 **Bonus:** I recommend having the font [Courier Prime](https://quoteunquoteapps.com/courierprime/) installed to use this theme.
+
+### End result
 
 Finally, here it is in action:
 
