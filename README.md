@@ -17,6 +17,7 @@ What is special about writing screenplays in Roam?
 - It's a theme that styles Roam Research **to make screenplays will actually look like screenplays**, while you type them.
 - It's made with actual screenwriters and storytelling needs in mind.
 - It's made by Fabrizio Rinaldi, [say hi or give feedback on Twitter](https://twitter.com/linuz90).
+- It loads a CSS file and some lines of Javascript in Roam to format all pages containing `[screenplay]` or `[script]` in their title as screenplays
 
 Here's Roam Research **before** applying this theme:
 
@@ -32,13 +33,25 @@ It even adds Dark Mode support:
 
 # Install this theme
 
-1. Inside Roam Research, create a page named exactly `roam/css`
+This looks cumbersome but it takes a minute.
 
-2. Create a `[[Roam Screenwriter]]` bullet point.
+* Inside Roam Research, create a page named exactly `roam/css`
 
-3. Create **code block** inside it (you can write three backticks to create it: ```) and change it to **css**
+* Create a `[[Roam Screenwriter]]` bullet point.
 
-4. Paste this in the code block `@import url("https://linuz90.github.io/roam-screenwriter/main.css");`
+* Create a child **code block** inside it (you can write three backticks to create it: ```) and change it to **css**
+
+* Paste this in the code block `@import url("https://linuz90.github.io/roam-screenwriter/main.css");`
+
+![](/assets/install-css.gif)
+
+* Now type this inside any page (I used a "Scripts" page): `{{[[roam/js]]}}`
+
+* Click on the red "I know what I'm doing" button and add a child code block inside, like on step 3 but set it to **javascript**
+
+* *Paste this code inside it: `import("https://linuz90.github.io/roam-screenwriter/script.js")`
+
+![](/assets/install-js.gif)
 
 **Bonus:** I recommend having the font [Courier Prime](https://quoteunquoteapps.com/courierprime/) installed to use this theme.
 
@@ -54,9 +67,11 @@ Check out a more extensive theming guide [here](https://nesslabs.com/roam-resear
 
 # How to use it
 
-**The screenplay syntax in this theme is completely based on indentation.** To make it clear, when editing a block you’ll see an overlay in the bottom part of the screen that indicates the kind of block you’re editing.
+Add `[screenplay]` or `[script]` to any page title, and it will be formatted as a screenplay.
 
-Just press `Tab` and `Shift + Tab` to cycle through these block types:
+**The formatting is completely based on indentation.**
+
+Indeed, just press `Tab` and `Shift + Tab` to cycle through these block types:
 
 - Scene (heading)
 - Description

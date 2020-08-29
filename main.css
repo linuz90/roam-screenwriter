@@ -1,291 +1,311 @@
 /* ---------------- Import Better Roam Research as base style --------------- */
 @import url("https://linuz90.github.io/better-roam-research/main.css");
 /* --------------------------------- Mixins --------------------------------- */
-/* ---------------------------------- Style --------------------------------- */
-.roam-article {
+/* ------------------------------ General Style ----------------------------- */
+span,
+textarea,
+.rm-title-display,
+.rm-block-text {
+  font-family: 'Courier Prime', 'Courier New', Courier, monospace !important;
+  line-height: 20px !important;
+  font-size: 17px !important; }
+
+textarea {
+  line-height: 23px !important; }
+
+.rm-title-display,
+.rm-title-textarea {
+  font-size: 22px !important; }
+  .rm-title-display span,
+  .rm-title-textarea span {
+    font-size: 22px !important; }
+
+.rm-level1 div,
+.rm-level1 textarea {
+  font-size: 17px !important; }
+
+.bp3-menu {
+  font-size: 14px !important; }
+
+/* ---------------------------- Screenplay Style ---------------------------- */
+.roam-article.screenplay {
   /* ---------------------------------- Scene --------------------------------- */
   /* ------------------------------- Description ------------------------------ */
   /* ------------------------------- Characters ------------------------------- */
   /* --------------------------------- Dialog --------------------------------- */
   /* ------------------------------ Paranthetical ----------------------------- */ }
-  .roam-article span,
-  .roam-article textarea,
-  .roam-article .rm-title-display,
-  .roam-article .rm-block-text {
-    font-family: 'Courier Prime', 'Courier New', Courier, monospace !important;
-    line-height: 20px !important;
-    font-size: 17px !important; }
-  .roam-article textarea {
-    line-height: 23px !important; }
-  .roam-article .rm-title-display,
-  .roam-article .rm-title-textarea {
-    font-size: 22px !important;
+  .roam-article.screenplay .rm-title-display,
+  .roam-article.screenplay .rm-title-textarea {
     text-align: center !important; }
-    .roam-article .rm-title-display span,
-    .roam-article .rm-title-textarea span {
-      font-size: 22px !important; }
-  .roam-article .roam-block {
+  .roam-article.screenplay .roam-block {
     min-height: 17px !important;
     margin-top: 0px !important; }
-  .roam-article .rm-level1 div,
-  .roam-article .rm-level1 textarea {
-    font-size: 17px !important; }
-  .roam-article .rm-block-text {
+  .roam-article.screenplay .rm-block-text {
     padding-top: 0 !important;
     padding-bottom: 0 !important; }
-  .roam-article .rm-block-input {
+  .roam-article.screenplay .rm-block-input {
     margin-top: 0px !important; }
-  .roam-article .block-bullet-view {
+  .roam-article.screenplay .block-bullet-view {
     margin-bottom: 0px !important; }
-    .roam-article .block-bullet-view .block-border-left {
+    .roam-article.screenplay .block-bullet-view .block-border-left {
       border-left: none !important;
       padding-left: 1px !important; }
-    .roam-article .block-bullet-view > div > div > .controls {
+    .roam-article.screenplay .block-bullet-view > div > div > .controls {
       opacity: 0; }
-    .roam-article .block-bullet-view:hover > div > div > .controls {
+    .roam-article.screenplay .block-bullet-view:hover > div > div > .controls {
       opacity: 1; }
-  .roam-article .controls {
+  .roam-article.screenplay .controls {
     flex: 0 0 30px !important;
     padding-left: 0px !important;
     padding-top: 0px !important;
     padding-bottom: 0px !important; }
-  .roam-article .block-bullet-view {
+  .roam-article.screenplay .block-bullet-view {
     margin-left: 0px !important; }
-  .roam-article > div > div > div > div > div:first-child > div:not(.dnd-drop-area) {
+  .roam-article.screenplay > div > div > div > div > div:first-child > div:not(.dnd-drop-area) {
     max-width: 660px !important; }
-  .roam-article > div > div > div > div > div:first-child > .rm-block-text > span,
-  .roam-article > div > div > div > div > div:first-child > h1,
-  .roam-article > div > div > div > div > div:first-child > div > textarea {
+  .roam-article.screenplay > div > div > div > div > div:first-child > .rm-block-text > span,
+  .roam-article.screenplay > div > div > div > div > div:first-child > h1,
+  .roam-article.screenplay > div > div > div > div > div:first-child > div > textarea {
     font-weight: 600 !important; }
-    .roam-article > div > div > div > div > div:first-child > .rm-block-text > span:hover,
-    .roam-article > div > div > div > div > div:first-child > h1:hover,
-    .roam-article > div > div > div > div > div:first-child > div > textarea:hover {
+    .roam-article.screenplay > div > div > div > div > div:first-child > .rm-block-text > span:hover,
+    .roam-article.screenplay > div > div > div > div > div:first-child > h1:hover,
+    .roam-article.screenplay > div > div > div > div > div:first-child > div > textarea:hover {
       background: var(--main-background-color);
       border-radius: 3px !important; }
-    .roam-article > div > div > div > div > div:first-child > .rm-block-text > span:empty:after,
-    .roam-article > div > div > div > div > div:first-child > h1:empty:after,
-    .roam-article > div > div > div > div > div:first-child > div > textarea:empty:after {
+    .roam-article.screenplay > div > div > div > div > div:first-child > .rm-block-text > span:empty:after,
+    .roam-article.screenplay > div > div > div > div > div:first-child > h1:empty:after,
+    .roam-article.screenplay > div > div > div > div > div:first-child > div > textarea:empty:after {
       content: "[Scene]";
       color: var(--font-color-placeholder); }
-    .roam-article > div > div > div > div > div:first-child > .rm-block-text > span:empty,
-    .roam-article > div > div > div > div > div:first-child > h1:empty,
-    .roam-article > div > div > div > div > div:first-child > div > textarea:empty {
+    .roam-article.screenplay > div > div > div > div > div:first-child > .rm-block-text > span:empty,
+    .roam-article.screenplay > div > div > div > div > div:first-child > h1:empty,
+    .roam-article.screenplay > div > div > div > div > div:first-child > div > textarea:empty {
       content: "[Scene]";
       color: var(--font-color-placeholder); }
-  .roam-article > div > div > div > div > div:first-child:not(.dnd-separator) {
+  .roam-article.screenplay > div > div > div > div > div:first-child:not(.dnd-separator) {
     margin-bottom: 17px;
     margin-top: 0; }
-    .roam-article > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + div:not(.rm-block-text),
-    .roam-article > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + h1 > div:not(.rm-block-text) {
+    .roam-article.screenplay > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + div:not(.rm-block-text),
+    .roam-article.screenplay > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + h1 > div:not(.rm-block-text) {
       position: relative; }
-      .roam-article > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + div:not(.rm-block-text):after,
-      .roam-article > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + h1 > div:not(.rm-block-text):after {
+      .roam-article.screenplay > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + div:not(.rm-block-text):after,
+      .roam-article.screenplay > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + h1 > div:not(.rm-block-text):after {
         content: "Scene";
+        display: block;
         position: fixed;
-        bottom: 0px;
-        left: 0px;
-        right: 0px;
-        padding: 5px 0 7px;
+        bottom: 8px;
+        left: 40%;
+        padding: 8px 16px 9px 44px;
+        border-radius: 30px;
         font-weight: 600;
         text-align: center;
         font-size: 16px !important;
-        color: #ac3939;
-        background: #f7e8e8;
-        border-top: 1.5px solid #eecdcd; }
+        z-index: 999;
+        color: black;
+        background: #f9b8b8 url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHRpdGxlPmxvZ2luLTI8L3RpdGxlPjxwYXRoIGQ9Ik0yMC4yNSwxLjVoLTcuNVYuNWEuNS41LDAsMCwwLS42MDgtLjQ4OGwtOSwyQS41LjUsMCwwLDAsMi43NSwyLjV2MTlhLjUuNSwwLDAsMCwuMzkyLjQ4OGw5LDJhLjUuNSwwLDAsMCwuNjA4LS40ODh2LTFoNy41YTEsMSwwLDAsMCwxLTFWMi41QTEsMSwwLDAsMCwyMC4yNSwxLjVabS0xMCwxMUExLjUsMS41LDAsMSwxLDguNzUsMTEsMS41LDEuNSwwLDAsMSwxMC4yNSwxMi41Wm04LjUsOGgtNS41YS41LjUsMCwwLDEtLjUtLjVWNGEuNS41LDAsMCwxLC41LS41aDUuNWEuNS41LDAsMCwxLC41LjVWMjBBLjUuNSwwLDAsMSwxOC43NSwyMC41WiIvPjwvc3ZnPg==");
+        background-size: 20px 20px;
+        background-position: 13px center;
+        background-repeat: no-repeat; }
         @media (prefers-color-scheme: dark) {
-          .roam-article > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + div:not(.rm-block-text):after,
-          .roam-article > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + h1 > div:not(.rm-block-text):after {
-            color: #c65353;
-            background: #1f0a0a;
-            border-top: 1.5px solid #391313; } }
-  .roam-article .block-bullet-view > div {
+          .roam-article.screenplay > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + div:not(.rm-block-text):after,
+          .roam-article.screenplay > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + h1 > div:not(.rm-block-text):after {
+            filter: invert(0.8) brightness(1.3) hue-rotate(180deg) saturate(1.5); } }
+  .roam-article.screenplay .block-bullet-view > div {
     margin-left: 0px !important; }
-  .roam-article > div > div > div > div > div > div > div:first-child > div:not(.dnd-drop-area) {
+  .roam-article.screenplay > div > div > div > div > div > div > div:first-child > div:not(.dnd-drop-area) {
     max-width: 660px !important; }
-  .roam-article > div > div > div > div > div > div > div:first-child > .rm-block-text > span:hover,
-  .roam-article > div > div > div > div > div > div > div:first-child > h1:hover,
-  .roam-article > div > div > div > div > div > div > div:first-child > div > textarea:hover {
+  .roam-article.screenplay > div > div > div > div > div > div > div:first-child > .rm-block-text > span:hover,
+  .roam-article.screenplay > div > div > div > div > div > div > div:first-child > h1:hover,
+  .roam-article.screenplay > div > div > div > div > div > div > div:first-child > div > textarea:hover {
     background: var(--main-background-color);
     border-radius: 3px !important; }
-  .roam-article > div > div > div > div > div > div > div:first-child > .rm-block-text > span:empty:after,
-  .roam-article > div > div > div > div > div > div > div:first-child > h1:empty:after,
-  .roam-article > div > div > div > div > div > div > div:first-child > div > textarea:empty:after {
+  .roam-article.screenplay > div > div > div > div > div > div > div:first-child > .rm-block-text > span:empty:after,
+  .roam-article.screenplay > div > div > div > div > div > div > div:first-child > h1:empty:after,
+  .roam-article.screenplay > div > div > div > div > div > div > div:first-child > div > textarea:empty:after {
     content: "[Description]";
     color: var(--font-color-placeholder); }
-  .roam-article > div > div > div > div > div > div > div:first-child > .rm-block-text > span:empty,
-  .roam-article > div > div > div > div > div > div > div:first-child > h1:empty,
-  .roam-article > div > div > div > div > div > div > div:first-child > div > textarea:empty {
+  .roam-article.screenplay > div > div > div > div > div > div > div:first-child > .rm-block-text > span:empty,
+  .roam-article.screenplay > div > div > div > div > div > div > div:first-child > h1:empty,
+  .roam-article.screenplay > div > div > div > div > div > div > div:first-child > div > textarea:empty {
     content: "[Description]";
     color: var(--font-color-placeholder); }
-  .roam-article > div > div > div > div > div > div > div:first-child:not(.dnd-separator) {
+  .roam-article.screenplay > div > div > div > div > div > div > div:first-child:not(.dnd-separator) {
     margin-bottom: 17px;
     margin-top: 0; }
-    .roam-article > div > div > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + div:not(.rm-block-text),
-    .roam-article > div > div > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + h1 > div:not(.rm-block-text) {
+    .roam-article.screenplay > div > div > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + div:not(.rm-block-text),
+    .roam-article.screenplay > div > div > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + h1 > div:not(.rm-block-text) {
       position: relative; }
-      .roam-article > div > div > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + div:not(.rm-block-text):after,
-      .roam-article > div > div > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + h1 > div:not(.rm-block-text):after {
+      .roam-article.screenplay > div > div > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + div:not(.rm-block-text):after,
+      .roam-article.screenplay > div > div > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + h1 > div:not(.rm-block-text):after {
         content: "Description";
+        display: block;
         position: fixed;
-        bottom: 0px;
-        left: 0px;
-        right: 0px;
-        padding: 5px 0 7px;
+        bottom: 8px;
+        left: 40%;
+        padding: 8px 16px 9px 44px;
+        border-radius: 30px;
         font-weight: 600;
         text-align: center;
         font-size: 16px !important;
-        color: #ac7339;
-        background: #f7f0e8;
-        border-top: 1.5px solid #eedecd; }
+        z-index: 999;
+        color: black;
+        background: #f9d9b8 url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHRpdGxlPnF1aWxsLWNpcmNsZTwvdGl0bGU+PHBhdGggZD0iTTEzLjQ3NiwxMy4yNDRhLjc1Ljc1LDAsMCwxLC43NS0uNzVoNi4wODZhLjI1NC4yNTQsMCwwLDAsLjIwNy0uMTA3YzMuMDU3LTQuMjQ5LDQuNDA2LTguOTI0LDIuMDc1LTExLjI1OWEuNS41LDAsMCwwLS43LDAsLjQ1My40NTMsMCwwLDAtLjA1NC4wNjJsLTQuNjg4LDQuNjlhLjI1MS4yNTEsMCwwLDEtLjQyNy0uMTc3Vi45OTRBLjUuNSwwLDAsMCwxNiwuNTQ2LDMwLjA4NCwzMC4wODQsMCwwLDAsOC44LDZhMjMuMjUsMjMuMjUsMCwwLDAtNS4zNjgsNy45OTRjLS44MDgsMi4xNzEtLjkxLDQuMDA5LS4zNDEsNS4yNDZMLjUxOSwyMS44MDVhMSwxLDAsMCwwLDAsMS40MTQsMS4wMTUsMS4wMTUsMCwwLDAsMS40MTQsMGwyLjU1Ni0yLjU1NWE1LjUsNS41LDAsMCwwLDIuNDI1LjVBMTQuMjU0LDE0LjI1NCwwLDAsMCwxNS4xLDE3Ljk0N2EuMjUzLjI1MywwLDAsMC0uMTU0LS40NTNIOS43MjZhLjc1Ljc1LDAsMSwxLDAtMS41aDcuNTZhLjI1OC4yNTgsMCwwLDAsLjE3OC0uMDcyYy41LS40ODUuOTgzLS45OTEsMS40NDItMS41MTFhLjI1My4yNTMsMCwwLDAtLjE5Mi0uNDE3SDE0LjIyNkEuNzUuNzUsMCwwLDEsMTMuNDc2LDEzLjI0NFoiLz48L3N2Zz4=");
+        background-size: 20px 20px;
+        background-position: 13px center;
+        background-repeat: no-repeat; }
         @media (prefers-color-scheme: dark) {
-          .roam-article > div > div > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + div:not(.rm-block-text):after,
-          .roam-article > div > div > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + h1 > div:not(.rm-block-text):after {
-            color: #c68c53;
-            background: #1f140a;
-            border-top: 1.5px solid #392613; } }
-  .roam-article > div > div > div > div > div > div > div > div > div:first-child > div:not(.dnd-drop-area) {
+          .roam-article.screenplay > div > div > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + div:not(.rm-block-text):after,
+          .roam-article.screenplay > div > div > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + h1 > div:not(.rm-block-text):after {
+            filter: invert(0.8) brightness(1.3) hue-rotate(180deg) saturate(1.5); } }
+  .roam-article.screenplay > div > div > div > div > div > div > div > div > div:first-child > div:not(.dnd-drop-area) {
     max-width: 660px !important; }
-  .roam-article > div > div > div > div > div > div > div > div > div:first-child > .rm-block-text > span,
-  .roam-article > div > div > div > div > div > div > div > div > div:first-child > h1,
-  .roam-article > div > div > div > div > div > div > div > div > div:first-child > div > textarea {
+  .roam-article.screenplay > div > div > div > div > div > div > div > div > div:first-child > .rm-block-text > span,
+  .roam-article.screenplay > div > div > div > div > div > div > div > div > div:first-child > h1,
+  .roam-article.screenplay > div > div > div > div > div > div > div > div > div:first-child > div > textarea {
     text-align: center !important;
     display: block; }
-    .roam-article > div > div > div > div > div > div > div > div > div:first-child > .rm-block-text > span:hover,
-    .roam-article > div > div > div > div > div > div > div > div > div:first-child > h1:hover,
-    .roam-article > div > div > div > div > div > div > div > div > div:first-child > div > textarea:hover {
+    .roam-article.screenplay > div > div > div > div > div > div > div > div > div:first-child > .rm-block-text > span:hover,
+    .roam-article.screenplay > div > div > div > div > div > div > div > div > div:first-child > h1:hover,
+    .roam-article.screenplay > div > div > div > div > div > div > div > div > div:first-child > div > textarea:hover {
       background: var(--main-background-color);
       border-radius: 3px !important; }
-    .roam-article > div > div > div > div > div > div > div > div > div:first-child > .rm-block-text > span:empty:after,
-    .roam-article > div > div > div > div > div > div > div > div > div:first-child > h1:empty:after,
-    .roam-article > div > div > div > div > div > div > div > div > div:first-child > div > textarea:empty:after {
+    .roam-article.screenplay > div > div > div > div > div > div > div > div > div:first-child > .rm-block-text > span:empty:after,
+    .roam-article.screenplay > div > div > div > div > div > div > div > div > div:first-child > h1:empty:after,
+    .roam-article.screenplay > div > div > div > div > div > div > div > div > div:first-child > div > textarea:empty:after {
       content: "[Character]";
       color: var(--font-color-placeholder); }
-    .roam-article > div > div > div > div > div > div > div > div > div:first-child > .rm-block-text > span:empty,
-    .roam-article > div > div > div > div > div > div > div > div > div:first-child > h1:empty,
-    .roam-article > div > div > div > div > div > div > div > div > div:first-child > div > textarea:empty {
+    .roam-article.screenplay > div > div > div > div > div > div > div > div > div:first-child > .rm-block-text > span:empty,
+    .roam-article.screenplay > div > div > div > div > div > div > div > div > div:first-child > h1:empty,
+    .roam-article.screenplay > div > div > div > div > div > div > div > div > div:first-child > div > textarea:empty {
       content: "[Character]";
       color: var(--font-color-placeholder); }
-  .roam-article > div > div > div > div > div > div > div > div > div:first-child:not(.dnd-separator) {
+  .roam-article.screenplay > div > div > div > div > div > div > div > div > div:first-child:not(.dnd-separator) {
     margin-bottom: 0;
     margin-top: 0; }
-    .roam-article > div > div > div > div > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + div:not(.rm-block-text),
-    .roam-article > div > div > div > div > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + h1 > div:not(.rm-block-text) {
+    .roam-article.screenplay > div > div > div > div > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + div:not(.rm-block-text),
+    .roam-article.screenplay > div > div > div > div > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + h1 > div:not(.rm-block-text) {
       position: relative; }
-      .roam-article > div > div > div > div > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + div:not(.rm-block-text):after,
-      .roam-article > div > div > div > div > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + h1 > div:not(.rm-block-text):after {
+      .roam-article.screenplay > div > div > div > div > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + div:not(.rm-block-text):after,
+      .roam-article.screenplay > div > div > div > div > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + h1 > div:not(.rm-block-text):after {
         content: "Character";
+        display: block;
         position: fixed;
-        bottom: 0px;
-        left: 0px;
-        right: 0px;
-        padding: 5px 0 7px;
+        bottom: 8px;
+        left: 40%;
+        padding: 8px 16px 9px 44px;
+        border-radius: 30px;
         font-weight: 600;
         text-align: center;
         font-size: 16px !important;
-        color: #3960ac;
-        background: #e8edf7;
-        border-top: 1.5px solid #cdd8ee; }
+        z-index: 999;
+        color: black;
+        background: #b8cef9 url("data:image/svg+xml;base64,PHN2ZyBpZD0iQm9sZCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjx0aXRsZT5zaW5nbGUtbWFuLWNpcmNsZTwvdGl0bGU+PHBhdGggZD0iTTEyLDBBMTIsMTIsMCwxLDAsMjQsMTIsMTIuMDEzLDEyLjAxMywwLDAsMCwxMiwwWm0wLDIyYTkuOTU4LDkuOTU4LDAsMCwxLTYuNTU0LTIuNDU2LjUuNSwwLDAsMSwuMTI2LS44MzRjLjktLjQsMS45NDctLjc3OSwyLjk3OS0xLjE1Mi4zNzYtLjEzNy43NTEtLjI3MywxLjExOC0uNDA5YS4yNTEuMjUxLDAsMCwwLC4xNjMtLjIzNVYxNS4xNzVhLjI0OS4yNDksMCwwLDAtLjExOS0uMjEyLDMuMDc0LDMuMDc0LDAsMCwxLTEuMy0yLjYxMy4yNS4yNSwwLDAsMC0uMTItLjIsMS4yNTMsMS4yNTMsMCwwLDEtLjQ4My0xLjEwOCwxLjMxNiwxLjMxNiwwLDAsMSwuNDEtMS4wNTZBLjI0OS4yNDksMCwwLDAsOC4zLDkuNzIzYy0uMjUzLS45MDktLjYtMi4yNzQuMDExLTIuOTM3YTEuMTc4LDEuMTc4LDAsMCwxLC45NjUtLjM0LjI0OS4yNDksMCwwLDAsLjIyOC0uMTI1Yy41LS44NzIsMS45MDgtMS4yNjYsMy4yMDctMS4yNjYsMS40NjcsMCwzLjA3MS41LDMuMzUxLDEuNjI0YTUuODUzLDUuODUzLDAsMCwxLS4zNiwzLjA0NS4yNS4yNSwwLDAsMCwuMDgxLjI3LDEuMzI4LDEuMzI4LDAsMCwxLC40LDEuMDQ5QTEuMjUyLDEuMjUyLDAsMCwxLDE1LjcsMTIuMTVhLjI0OS4yNDksMCwwLDAtLjEyMS4yLDMuMDcyLDMuMDcyLDAsMCwxLTEuMzA1LDIuNjE0LjI0OS4yNDksMCwwLDAtLjExOS4yMTJ2MS43MzlhLjI0OC4yNDgsMCwwLDAsLjE2NC4yMzRjLjQwNy4xNTEuODEyLjMsMS4yMDkuNDQxLDEuMDc4LjM5LDIuMDcxLjc0OSwyLjksMS4xMTNhLjUuNSwwLDAsMSwuMTI4LjgzNUE5Ljk1OCw5Ljk1OCwwLDAsMSwxMiwyMloiLz48L3N2Zz4=");
+        background-size: 20px 20px;
+        background-position: 13px center;
+        background-repeat: no-repeat; }
         @media (prefers-color-scheme: dark) {
-          .roam-article > div > div > div > div > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + div:not(.rm-block-text):after,
-          .roam-article > div > div > div > div > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + h1 > div:not(.rm-block-text):after {
-            color: #5379c6;
-            background: #0a111f;
-            border-top: 1.5px solid #132039; } }
-  .roam-article > div > div > div > div > div > div > div > div > div > div > div:first-child > div:not(.dnd-drop-area) {
+          .roam-article.screenplay > div > div > div > div > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + div:not(.rm-block-text):after,
+          .roam-article.screenplay > div > div > div > div > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + h1 > div:not(.rm-block-text):after {
+            filter: invert(0.8) brightness(1.3) hue-rotate(180deg) saturate(1.5); } }
+  .roam-article.screenplay > div > div > div > div > div > div > div > div > div > div > div:first-child > div:not(.dnd-drop-area) {
     max-width: 660px !important; }
-  .roam-article > div > div > div > div > div > div > div > div > div > div > div:first-child > .rm-block-text > span,
-  .roam-article > div > div > div > div > div > div > div > div > div > div > div:first-child > h1,
-  .roam-article > div > div > div > div > div > div > div > div > div > div > div:first-child > div > textarea {
+  .roam-article.screenplay > div > div > div > div > div > div > div > div > div > div > div:first-child > .rm-block-text > span,
+  .roam-article.screenplay > div > div > div > div > div > div > div > div > div > div > div:first-child > h1,
+  .roam-article.screenplay > div > div > div > div > div > div > div > div > div > div > div:first-child > div > textarea {
     margin: 0 auto !important;
     width: 360px !important;
     max-width: 100% !important;
     display: block !important; }
-    .roam-article > div > div > div > div > div > div > div > div > div > div > div:first-child > .rm-block-text > span:hover,
-    .roam-article > div > div > div > div > div > div > div > div > div > div > div:first-child > h1:hover,
-    .roam-article > div > div > div > div > div > div > div > div > div > div > div:first-child > div > textarea:hover {
+    .roam-article.screenplay > div > div > div > div > div > div > div > div > div > div > div:first-child > .rm-block-text > span:hover,
+    .roam-article.screenplay > div > div > div > div > div > div > div > div > div > div > div:first-child > h1:hover,
+    .roam-article.screenplay > div > div > div > div > div > div > div > div > div > div > div:first-child > div > textarea:hover {
       background: var(--main-background-color);
       border-radius: 3px !important; }
-    .roam-article > div > div > div > div > div > div > div > div > div > div > div:first-child > .rm-block-text > span:empty:after,
-    .roam-article > div > div > div > div > div > div > div > div > div > div > div:first-child > h1:empty:after,
-    .roam-article > div > div > div > div > div > div > div > div > div > div > div:first-child > div > textarea:empty:after {
+    .roam-article.screenplay > div > div > div > div > div > div > div > div > div > div > div:first-child > .rm-block-text > span:empty:after,
+    .roam-article.screenplay > div > div > div > div > div > div > div > div > div > div > div:first-child > h1:empty:after,
+    .roam-article.screenplay > div > div > div > div > div > div > div > div > div > div > div:first-child > div > textarea:empty:after {
       content: "[Dialog]";
       color: var(--font-color-placeholder); }
-    .roam-article > div > div > div > div > div > div > div > div > div > div > div:first-child > .rm-block-text > span:empty,
-    .roam-article > div > div > div > div > div > div > div > div > div > div > div:first-child > h1:empty,
-    .roam-article > div > div > div > div > div > div > div > div > div > div > div:first-child > div > textarea:empty {
+    .roam-article.screenplay > div > div > div > div > div > div > div > div > div > div > div:first-child > .rm-block-text > span:empty,
+    .roam-article.screenplay > div > div > div > div > div > div > div > div > div > div > div:first-child > h1:empty,
+    .roam-article.screenplay > div > div > div > div > div > div > div > div > div > div > div:first-child > div > textarea:empty {
       content: "[Dialog]";
       color: var(--font-color-placeholder); }
-  .roam-article > div > div > div > div > div > div > div > div > div > div > div:first-child:not(.dnd-separator) {
+  .roam-article.screenplay > div > div > div > div > div > div > div > div > div > div > div:first-child:not(.dnd-separator) {
     margin-bottom: 17px;
     margin-top: 0; }
-    .roam-article > div > div > div > div > div > div > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + div:not(.rm-block-text),
-    .roam-article > div > div > div > div > div > div > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + h1 > div:not(.rm-block-text) {
+    .roam-article.screenplay > div > div > div > div > div > div > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + div:not(.rm-block-text),
+    .roam-article.screenplay > div > div > div > div > div > div > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + h1 > div:not(.rm-block-text) {
       position: relative; }
-      .roam-article > div > div > div > div > div > div > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + div:not(.rm-block-text):after,
-      .roam-article > div > div > div > div > div > div > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + h1 > div:not(.rm-block-text):after {
+      .roam-article.screenplay > div > div > div > div > div > div > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + div:not(.rm-block-text):after,
+      .roam-article.screenplay > div > div > div > div > div > div > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + h1 > div:not(.rm-block-text):after {
         content: "Dialog";
+        display: block;
         position: fixed;
-        bottom: 0px;
-        left: 0px;
-        right: 0px;
-        padding: 5px 0 7px;
+        bottom: 8px;
+        left: 40%;
+        padding: 8px 16px 9px 44px;
+        border-radius: 30px;
         font-weight: 600;
         text-align: center;
         font-size: 16px !important;
-        color: #39acac;
-        background: #e8f7f7;
-        border-top: 1.5px solid #cdeeee; }
+        z-index: 999;
+        color: black;
+        background: #b8f9f9 url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHRpdGxlPm1lc3NhZ2VzLWJ1YmJsZS1kb3VibGU8L3RpdGxlPjxwYXRoIGQ9Ik0xNi4zLDguNTEyYTkuMTIsOS4xMiwwLDAsMSwxLjM3LjEwNS4yNTEuMjUxLDAsMCwwLC4yODUtLjIxOEE1LjU2Nyw1LjU2NywwLDAsMCwxOCw3Ljc1MUMxOCwzLjc1NCwxNC4wNzUuNSw5LjI1LjVTLjUsMy43NTQuNSw3Ljc1MUE2LjU1Niw2LjU1NiwwLDAsMCwyLjc0NiwxMi42bC0xLjcsMi45NzhhLjUuNSwwLDAsMCwuNjIuNzEzTDYuMSwxNC41MTZhMTAuMTEzLDEwLjExMywwLDAsMCwxLjQyMi4zNC4yNS4yNSwwLDAsMCwuMjg0LS4xODdDOC42NTUsMTEuMiwxMi4yLDguNTEyLDE2LjMsOC41MTJaIi8+PHBhdGggZD0iTTE2LjMsMTAuMDEyYy0zLjksMC03LjIsMi44NTctNy4yLDYuMjM5YTYuMjQsNi4yNCwwLDAsMCwyLjk1OCw1LjE4MSw3LjE1Nyw3LjE1NywwLDAsMCw2LjY0Mi42MThsMy41ODUsMS40MTdhLjU1Ny41NTcsMCwwLDAsLjY3Ni0uNzQzbC0uODM0LTIuOTUxQTUuMTc1LDUuMTc1LDAsMCwwLDIzLjUsMTYuMjUxQzIzLjUsMTIuODY5LDIwLjIsMTAuMDEyLDE2LjMsMTAuMDEyWiIvPjwvc3ZnPg==");
+        background-size: 20px 20px;
+        background-position: 13px center;
+        background-repeat: no-repeat; }
         @media (prefers-color-scheme: dark) {
-          .roam-article > div > div > div > div > div > div > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + div:not(.rm-block-text):after,
-          .roam-article > div > div > div > div > div > div > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + h1 > div:not(.rm-block-text):after {
-            color: #53c6c6;
-            background: #0a1f1f;
-            border-top: 1.5px solid #133939; } }
-  .roam-article > div > div > div > div > div > div > div > div > div > div > div > div > div:first-child > div:not(.dnd-drop-area) {
+          .roam-article.screenplay > div > div > div > div > div > div > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + div:not(.rm-block-text):after,
+          .roam-article.screenplay > div > div > div > div > div > div > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + h1 > div:not(.rm-block-text):after {
+            filter: invert(0.8) brightness(1.3) hue-rotate(180deg) saturate(1.5); } }
+  .roam-article.screenplay > div > div > div > div > div > div > div > div > div > div > div > div > div:first-child > div:not(.dnd-drop-area) {
     max-width: 660px !important; }
-  .roam-article > div > div > div > div > div > div > div > div > div > div > div > div > div:first-child > .rm-block-text > span,
-  .roam-article > div > div > div > div > div > div > div > div > div > div > div > div > div:first-child > h1,
-  .roam-article > div > div > div > div > div > div > div > div > div > div > div > div > div:first-child > div > textarea {
+  .roam-article.screenplay > div > div > div > div > div > div > div > div > div > div > div > div > div:first-child > .rm-block-text > span,
+  .roam-article.screenplay > div > div > div > div > div > div > div > div > div > div > div > div > div:first-child > h1,
+  .roam-article.screenplay > div > div > div > div > div > div > div > div > div > div > div > div > div:first-child > div > textarea {
     display: block !important;
     text-align: center; }
-    .roam-article > div > div > div > div > div > div > div > div > div > div > div > div > div:first-child > .rm-block-text > span:hover,
-    .roam-article > div > div > div > div > div > div > div > div > div > div > div > div > div:first-child > h1:hover,
-    .roam-article > div > div > div > div > div > div > div > div > div > div > div > div > div:first-child > div > textarea:hover {
+    .roam-article.screenplay > div > div > div > div > div > div > div > div > div > div > div > div > div:first-child > .rm-block-text > span:hover,
+    .roam-article.screenplay > div > div > div > div > div > div > div > div > div > div > div > div > div:first-child > h1:hover,
+    .roam-article.screenplay > div > div > div > div > div > div > div > div > div > div > div > div > div:first-child > div > textarea:hover {
       background: var(--main-background-color);
       border-radius: 3px !important; }
-    .roam-article > div > div > div > div > div > div > div > div > div > div > div > div > div:first-child > .rm-block-text > span:empty:after,
-    .roam-article > div > div > div > div > div > div > div > div > div > div > div > div > div:first-child > h1:empty:after,
-    .roam-article > div > div > div > div > div > div > div > div > div > div > div > div > div:first-child > div > textarea:empty:after {
+    .roam-article.screenplay > div > div > div > div > div > div > div > div > div > div > div > div > div:first-child > .rm-block-text > span:empty:after,
+    .roam-article.screenplay > div > div > div > div > div > div > div > div > div > div > div > div > div:first-child > h1:empty:after,
+    .roam-article.screenplay > div > div > div > div > div > div > div > div > div > div > div > div > div:first-child > div > textarea:empty:after {
       content: "[Parenthetical]";
       color: var(--font-color-placeholder); }
-    .roam-article > div > div > div > div > div > div > div > div > div > div > div > div > div:first-child > .rm-block-text > span:empty,
-    .roam-article > div > div > div > div > div > div > div > div > div > div > div > div > div:first-child > h1:empty,
-    .roam-article > div > div > div > div > div > div > div > div > div > div > div > div > div:first-child > div > textarea:empty {
+    .roam-article.screenplay > div > div > div > div > div > div > div > div > div > div > div > div > div:first-child > .rm-block-text > span:empty,
+    .roam-article.screenplay > div > div > div > div > div > div > div > div > div > div > div > div > div:first-child > h1:empty,
+    .roam-article.screenplay > div > div > div > div > div > div > div > div > div > div > div > div > div:first-child > div > textarea:empty {
       content: "[Parenthetical]";
       color: var(--font-color-placeholder); }
-  .roam-article > div > div > div > div > div > div > div > div > div > div > div > div > div:first-child:not(.dnd-separator) {
+  .roam-article.screenplay > div > div > div > div > div > div > div > div > div > div > div > div > div:first-child:not(.dnd-separator) {
     margin-bottom: 17px;
     margin-top: -17px; }
-    .roam-article > div > div > div > div > div > div > div > div > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + div:not(.rm-block-text),
-    .roam-article > div > div > div > div > div > div > div > div > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + h1 > div:not(.rm-block-text) {
+    .roam-article.screenplay > div > div > div > div > div > div > div > div > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + div:not(.rm-block-text),
+    .roam-article.screenplay > div > div > div > div > div > div > div > div > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + h1 > div:not(.rm-block-text) {
       position: relative; }
-      .roam-article > div > div > div > div > div > div > div > div > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + div:not(.rm-block-text):after,
-      .roam-article > div > div > div > div > div > div > div > div > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + h1 > div:not(.rm-block-text):after {
+      .roam-article.screenplay > div > div > div > div > div > div > div > div > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + div:not(.rm-block-text):after,
+      .roam-article.screenplay > div > div > div > div > div > div > div > div > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + h1 > div:not(.rm-block-text):after {
         content: "Parenthetical";
+        display: block;
         position: fixed;
-        bottom: 0px;
-        left: 0px;
-        right: 0px;
-        padding: 5px 0 7px;
+        bottom: 8px;
+        left: 40%;
+        padding: 8px 16px 9px 44px;
+        border-radius: 30px;
         font-weight: 600;
         text-align: center;
         font-size: 16px !important;
-        color: #ac9939;
-        background: #f7f5e8;
-        border-top: 1.5px solid #eee9cd; }
+        z-index: 999;
+        color: black;
+        background: #f9eeb8 url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHRpdGxlPm1lc3NhZ2VzLWJ1YmJsZS1zcXVhcmUtdHlwaW5nPC90aXRsZT48cGF0aCBkPSJNMjIsMS41SDJBMS41LDEuNSwwLDAsMCwuNSwzVjE2LjU1MkExLjQ1OSwxLjQ1OSwwLDAsMCwyLDE4SDV2NGEuNS41LDAsMCwwLC43ODUuNDExTDEyLjE1NiwxOEgyMmExLjUsMS41LDAsMCwwLDEuNS0xLjVWM0ExLjUsMS41LDAsMCwwLDIyLDEuNVpNMTksMTBhMS41LDEuNSwwLDEsMS0xLjUtMS41QTEuNSwxLjUsMCwwLDEsMTksMTBaTTUsMTBhMS41LDEuNSwwLDEsMSwxLjUsMS41QTEuNSwxLjUsMCwwLDEsNSwxMFptNS41LDBBMS41LDEuNSwwLDEsMSwxMiwxMS41LDEuNSwxLjUsMCwwLDEsMTAuNSwxMFoiLz48L3N2Zz4=");
+        background-size: 20px 20px;
+        background-position: 13px center;
+        background-repeat: no-repeat; }
         @media (prefers-color-scheme: dark) {
-          .roam-article > div > div > div > div > div > div > div > div > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + div:not(.rm-block-text):after,
-          .roam-article > div > div > div > div > div > div > div > div > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + h1 > div:not(.rm-block-text):after {
-            color: #c6b353;
-            background: #1f1b0a;
-            border-top: 1.5px solid #393313; } }
+          .roam-article.screenplay > div > div > div > div > div > div > div > div > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + div:not(.rm-block-text):after,
+          .roam-article.screenplay > div > div > div > div > div > div > div > div > div > div > div > div > div:first-child:not(.dnd-separator) > .controls + h1 > div:not(.rm-block-text):after {
+            filter: invert(0.8) brightness(1.3) hue-rotate(180deg) saturate(1.5); } }
