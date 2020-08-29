@@ -55,15 +55,9 @@ This looks cumbersome but it takes a minute.
 
 **Bonus:** I recommend having the font [Courier Prime](https://quoteunquoteapps.com/courierprime/) installed to use this theme.
 
-(this will load the [compiled css](https://linuz90.github.io/roam-screenwriter/main.css) in Roam)
+Finally, here it is in action:
 
-It should look like this:
-
-![](/assets/how-to.png)
-
-With this system the theme will stay up to date automatically ⚡️
-
-Check out a more extensive theming guide [here](https://nesslabs.com/roam-research-themes-custom-styling-css).
+![](/assets/final-result.gif)
 
 # How to use it
 
